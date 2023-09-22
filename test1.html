@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <title>
+        Ejemplo del uso del JavaScript
+   </title>
+</head>
+<body>
+        <script>
+            
+            /*alert('Necesito que me indiques tu nombre apellido')
+          var  nombre = prompt("Indica tu nombre: ");
+          var  edad = prompt("Indica tu edad");
+          alert('Hola ' + nombre + " , tienes " + edad);*/
+            
+          /*var anoActual = prompt('Dime el año actual');
+          var anoNacimiento =prompt('Dime el año en el que naciste');
+          var resultado = parseInt(anoActual - anoNacimiento);
+
+          alert("Estamos en el año " + anoActual + " naciste en  " + anoNacimiento  + " y acabarás este año con "  + resultado)*/
+
+            
+        /*  var n1 = parseFloat(prompt("Indica un número "));
+          var n2 = parseFloat(prompt("Indica otro número "));
+          var n3 = parseFloat(prompt("Indica un último número "));
+        
+          var resultado = n1 + n2 + n3;
+
+          var mediaNoEntera = parseFloat(resultado /3);
+          
+         var mensaje = "La media es de " + n1  + " - " +  n2 + " - " +  n3  + " es: " + mediaNoEntera;
+
+         alert(mensaje);*/
+
+        var edad = parseInt(prompt("Introduce tu edad"));
+        var tiempoRestanteEnDias = ((100-edad) * 365) ; //Supononiendo que no hay años bisiestos
+        var tiempoRestanteEnHoras = (tiempoRestanteEnDias * 24); 
+        var tiempoRestanteEnMinutos = (tiempoRestanteEnHoras *60);
+        var tiempoRestanteEnSegundos = (tiempoRestanteEnMinutos * 60);
+
+        var mensaje  = "Te quedan aproximadamente " + tiempoRestanteEnDias + " días" + "\n" +
+                       "Te quedan aproximadamente " + tiempoRestanteEnHoras + " horas" + "\n" +
+                       "Te quedan aproximadamente " + tiempoRestanteEnMinutos + " minutos" + "\n" +
+                       "Te quedan aproximadamente " + tiempoRestanteEnSegundos + " segundos" + "\n" ;
+
+        alert(mensaje);
+
+
+        </script>
+    
+</body>
+</html>
